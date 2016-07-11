@@ -21,27 +21,9 @@ namespace CALCULATOR
         {
             double First = Convert.ToDouble(textBoxInput1.Text);
             double Second = Convert.ToDouble(textBoxInput2.Text);
-            double Result;
-            switch (((Button)sender).Name)
-            {
-                case "buttonPlus":
-                    Result = First + Second;
-                    break;
-                case "buttonMinus":
-                    Result = First - Second;
-                    break;
-                case "buttonDivision":
-                    Result = First / Second;
-                    break;
-                case "buttonMultiplication":
-                    Result = First * Second;
-                    break;
-                default:
-                    throw new Exception("I don't no this Operation");
-
-            }
+            ITwoCalculator calculator = TwoArgFactory.CreateCalculator(((Button) sender).Name);
+            double Result= calculator.Calculate(First,Second);
             labelOutput.Text = Result.ToString();
         }
-
     }
 }

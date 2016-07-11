@@ -108,9 +108,8 @@
             this.labelOutput.AutoSize = true;
             this.labelOutput.Location = new System.Drawing.Point(166, 136);
             this.labelOutput.Name = "labelOutput";
-            this.labelOutput.Size = new System.Drawing.Size(35, 13);
+            this.labelOutput.Size = new System.Drawing.Size(0, 13);
             this.labelOutput.TabIndex = 9;
-            this.labelOutput.Text = "label2";
             // 
             // FormCalculator
             // 
