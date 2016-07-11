@@ -47,7 +47,7 @@
             this.buttonPlus.TabIndex = 0;
             this.buttonPlus.Text = "+";
             this.buttonPlus.UseVisualStyleBackColor = true;
-            this.buttonPlus.Click += new System.EventHandler(this.buttonPlus_Click);
+            this.buttonPlus.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMinus
             // 
@@ -58,7 +58,7 @@
             this.buttonMinus.TabIndex = 1;
             this.buttonMinus.Text = "-";
             this.buttonMinus.UseVisualStyleBackColor = true;
-            this.buttonMinus.Click += new System.EventHandler(this.buttonMinus_Click);
+            this.buttonMinus.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonDivision
             // 
@@ -69,7 +69,7 @@
             this.buttonDivision.TabIndex = 2;
             this.buttonDivision.Text = "/";
             this.buttonDivision.UseVisualStyleBackColor = true;
-            this.buttonDivision.Click += new System.EventHandler(this.buttonDivision_Click);
+            this.buttonDivision.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonMultiplication
             // 
@@ -80,16 +80,14 @@
             this.buttonMultiplication.TabIndex = 3;
             this.buttonMultiplication.Text = "*";
             this.buttonMultiplication.UseVisualStyleBackColor = true;
-            this.buttonMultiplication.Click += new System.EventHandler(this.buttonMultiplication_Click);
+            this.buttonMultiplication.Click += new System.EventHandler(this.button_Click);
             // 
             // labelOutputSimbol
             // 
-            this.labelOutputSimbol.AutoSize = true;
-            this.labelOutputSimbol.Location = new System.Drawing.Point(166, 47);
+            this.labelOutputSimbol.Location = new System.Drawing.Point(0, 0);
             this.labelOutputSimbol.Name = "labelOutputSimbol";
-            this.labelOutputSimbol.Size = new System.Drawing.Size(35, 13);
-            this.labelOutputSimbol.TabIndex = 4;
-            this.labelOutputSimbol.Text = "label1";
+            this.labelOutputSimbol.Size = new System.Drawing.Size(100, 23);
+            this.labelOutputSimbol.TabIndex = 10;
             // 
             // textBoxInput1
             // 

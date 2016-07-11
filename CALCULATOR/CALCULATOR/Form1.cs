@@ -17,48 +17,31 @@ namespace CALCULATOR
             InitializeComponent();
         }
 
-        private void buttonPlus_Click(object sender, EventArgs e)
+        private void button_Click(object sender, EventArgs e)
         {
-            Convert.ToDouble(textBoxInput1.Text);
-            Convert.ToDouble(textBoxInput2.Text);
             double First = Convert.ToDouble(textBoxInput1.Text);
             double Second = Convert.ToDouble(textBoxInput2.Text);
-            double Result = First + Second;
+            double Result;
+            switch (((Button)sender).Name)
+            {
+                case "buttonPlus":
+                    Result = First + Second;
+                    break;
+                case "buttonMinus":
+                    Result = First - Second;
+                    break;
+                case "buttonDivision":
+                    Result = First / Second;
+                    break;
+                case "buttonMultiplication":
+                    Result = First * Second;
+                    break;
+                default:
+                    throw new Exception("I don't no this Operation");
+
+            }
             labelOutput.Text = Result.ToString();
-            labelOutputSimbol.Text = buttonPlus.Text;
         }
 
-        private void buttonMinus_Click(object sender, EventArgs e)
-        {
-            Convert.ToDouble(textBoxInput1.Text);
-            Convert.ToDouble(textBoxInput2.Text);
-            double First = Convert.ToDouble(textBoxInput1.Text);
-            double Second = Convert.ToDouble(textBoxInput2.Text);
-            double Result = First - Second;
-            labelOutput.Text = Result.ToString();
-            labelOutputSimbol.Text = buttonMinus.Text;
-        }
-
-        private void buttonDivision_Click(object sender, EventArgs e)
-        {
-            Convert.ToDouble(textBoxInput1.Text);
-            Convert.ToDouble(textBoxInput2.Text);
-            double First = Convert.ToDouble(textBoxInput1.Text);
-            double Second = Convert.ToDouble(textBoxInput2.Text);
-            double Result = First / Second;
-            labelOutput.Text = Result.ToString();
-            labelOutputSimbol.Text = buttonDivision.Text;
-        }
-
-        private void buttonMultiplication_Click(object sender, EventArgs e)
-        {
-            Convert.ToDouble(textBoxInput1.Text);
-            Convert.ToDouble(textBoxInput2.Text);
-            double First = Convert.ToDouble(textBoxInput1.Text);
-            double Second = Convert.ToDouble(textBoxInput2.Text);
-            double Result = First * Second;
-            labelOutput.Text = Result.ToString();
-            labelOutputSimbol.Text = buttonMultiplication.Text;
-        }
     }
 }
