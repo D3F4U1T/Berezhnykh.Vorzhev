@@ -4,15 +4,15 @@ using NUnit.Framework;
 namespace CALCULATOR.Tests.TwoArgFunction
 {
     [TestFixture]
-    public class PlusTests
+    public class SqrxyTests
     {
-        [TestCase(6, 2, 8)]
-        [TestCase(8, 2, 10)]
+        [TestCase(2, 3, 8)]
+        [TestCase(5, 3, 125)]
         public void PlusTest(double first, double second, double expected)
         {
-            ITwoCalculator calc = new Plus();
+            ITwoCalculator calc = new Sqrxy();
             double result = calc.Calculate(first, second);
-            Assert.AreEqual(expected,result);
+            Assert.AreEqual(expected, result);
         }
     }
 }

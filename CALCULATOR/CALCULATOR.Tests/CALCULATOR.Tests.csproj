@@ -43,11 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgFunction\AbcTests.cs" />
+    <Compile Include="OneArgFunction\CosTests.cs" />
+    <Compile Include="OneArgFunction\CtgTests.cs" />
+    <Compile Include="OneArgFunction\ExpTests.cs" />
+    <Compile Include="OneArgFunction\InverseTests.cs" />
+    <Compile Include="OneArgFunction\SqrQubeTests.cs" />
+    <Compile Include="OneArgFunction\SqrTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgFunction\DivisionTests.cs" />
     <Compile Include="TwoArgFunction\MinusTests.cs" />
     <Compile Include="TwoArgFunction\MultiplicationTests.cs" />
     <Compile Include="TwoArgFunction\PlusTests.cs" />
+    <Compile Include="TwoArgFunction\SqrtxTests.cs" />
+    <Compile Include="TwoArgFunction\SqrxyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CALCULATOR\CALCULATOR.csproj">
@@ -58,9 +67,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OneArgFunction\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
