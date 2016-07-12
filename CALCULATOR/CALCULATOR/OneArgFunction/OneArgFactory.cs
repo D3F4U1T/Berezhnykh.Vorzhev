@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.OneArgFunction
 {
     public static class OneArgFactory
     {

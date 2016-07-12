@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.TwoArgFunction
 {
     
         public class ClassLog : ITwoCalculator
     {
-        public double Calculate(double First, double Second)
+        public double Calculate(double first, double second)
         {
-            return Math.Log(First, Second);
+            return Math.Log(first, second);
         }
     }
    

@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.OneArgFunction
 {
     public class Tan : IOneCalculator
     {
-        public double Calculate(double First)
+        public double Calculate(double first)
         {
-            return Math.Tan(First);
+            return Math.Tan(first);
         }
     }
 }

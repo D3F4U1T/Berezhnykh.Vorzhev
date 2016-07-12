@@ -1,7 +1,7 @@
-﻿namespace CALCULATOR
+﻿namespace CALCULATOR.TwoArgFunction
 {
     public interface ITwoCalculator
     {
-        double Calculate(double First, double Second);
+        double Calculate(double first, double second);
     }
 }

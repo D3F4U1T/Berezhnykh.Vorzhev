@@ -1,10 +1,10 @@
-﻿namespace CALCULATOR
+﻿namespace CALCULATOR.OneArgFunction
 {
     public class SqrQube : IOneCalculator
     {
-        public double Calculate(double First)
+        public double Calculate(double first)
         {
-            return First*First*First;
+            return first*first*first;
         }
     }
 }

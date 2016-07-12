@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.OneArgFunction
 {
     public class Ctg : IOneCalculator
     {
-        public double Calculate(double First)
+        public double Calculate(double first)
         {
-            return Math.Cos(First)/Math.Sin(First);
+            return Math.Cos(first)/Math.Sin(first);
         }
     }
 }

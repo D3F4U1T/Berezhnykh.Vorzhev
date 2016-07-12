@@ -1,7 +1,7 @@
-﻿namespace CALCULATOR
+﻿namespace CALCULATOR.OneArgFunction
 {
     public interface IOneCalculator
     {
-        double Calculate(double First);
+        double Calculate(double first);
     }
 }

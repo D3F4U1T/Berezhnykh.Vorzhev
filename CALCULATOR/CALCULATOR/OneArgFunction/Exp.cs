@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.OneArgFunction
 {
     public class Exp : IOneCalculator
     {
-        public double Calculate(double First)
+        public double Calculate(double first)
         {
-            return Math.Exp(First);
+            return Math.Exp(first);
         }
     }
 }

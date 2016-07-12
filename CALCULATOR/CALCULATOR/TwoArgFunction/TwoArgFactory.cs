@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Windows.Forms;
 
-namespace CALCULATOR
+namespace CALCULATOR.TwoArgFunction
 {
     public static class TwoArgFactory
     {
-        public static ITwoCalculator CreateCalculator(string CalculatorName)
+        public static ITwoCalculator CreateCalculator(string calculatorName)
         {
-            switch (CalculatorName)
+            switch (calculatorName)
             {
                 case "buttonPlus":
                     return new Plus();

@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.TwoArgFunction
 {
     public class Atan2 : ITwoCalculator
     {
-        public double Calculate(double First, double Second)
+        public double Calculate(double first, double second)
         {
-            return Math.Atan2(First, Second);
+            return Math.Atan2(first, second);
         }
     }
 }

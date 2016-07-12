@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.OneArgFunction
 {
     public class Cos : IOneCalculator
     {
-        public double Calculate(double First)
+        public double Calculate(double first)
         {
-            return Math.Cos(First);
+            return Math.Cos(first);
         }
     }
 }

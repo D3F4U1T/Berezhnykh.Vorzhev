@@ -1,10 +1,10 @@
-﻿namespace CALCULATOR
+﻿namespace CALCULATOR.TwoArgFunction
 {
     public class Minus : ITwoCalculator
     {
-        public double Calculate(double First, double Second)
+        public double Calculate(double first, double second)
         {
-            return First - Second;
+            return first - second;
         }
     }
 }

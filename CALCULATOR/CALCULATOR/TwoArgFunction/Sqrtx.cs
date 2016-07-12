@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.TwoArgFunction
 {
     public class Sqrtx : ITwoCalculator
     {
-        public double Calculate(double First, double Second)
+        public double Calculate(double first, double second)
         {
-            return Math.Pow(First, 1/Second);
+            return Math.Pow(first, 1/second);
         }
     }
 }

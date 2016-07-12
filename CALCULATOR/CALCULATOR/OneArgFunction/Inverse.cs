@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace CALCULATOR
+﻿namespace CALCULATOR.OneArgFunction
 {
     public class Inverse : IOneCalculator
     {
-        public double Calculate(double First)
+        public double Calculate(double first)
         {
-            return -First;
+            return -first;
         }
     }
 }

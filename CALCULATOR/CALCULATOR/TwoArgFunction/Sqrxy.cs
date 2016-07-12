@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace CALCULATOR
+namespace CALCULATOR.TwoArgFunction
 {
     public class Sqrxy : ITwoCalculator
     {
-        public double Calculate(double First, double Second)
+        public double Calculate(double first, double second)
         {
-            return Math.Pow(First, Second);
+            return Math.Pow(first, second);
         }
     }
 }
