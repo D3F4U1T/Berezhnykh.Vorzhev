@@ -334,7 +334,6 @@
             this.Controls.Add(this.buttonPlus);
             this.Name = "FormCalculator";
             this.Text = "Form1";
-            this.Click += new System.EventHandler(this.button_ClickOne);
             this.ResumeLayout(false);
             this.PerformLayout();
 
