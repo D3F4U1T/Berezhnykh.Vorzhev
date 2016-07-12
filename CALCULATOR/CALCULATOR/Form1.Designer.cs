@@ -36,12 +36,16 @@
             this.textBoxInput1 = new System.Windows.Forms.TextBox();
             this.textBoxInput2 = new System.Windows.Forms.TextBox();
             this.labelOutput = new System.Windows.Forms.Label();
+            this.buttonSqrt = new System.Windows.Forms.Button();
+            this.buttonCos = new System.Windows.Forms.Button();
+            this.buttonSin = new System.Windows.Forms.Button();
+            this.buttonLn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPlus
             // 
             this.buttonPlus.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonPlus.Location = new System.Drawing.Point(12, 207);
+            this.buttonPlus.Location = new System.Drawing.Point(12, 179);
             this.buttonPlus.Name = "buttonPlus";
             this.buttonPlus.Size = new System.Drawing.Size(75, 23);
             this.buttonPlus.TabIndex = 0;
@@ -52,7 +56,7 @@
             // buttonMinus
             // 
             this.buttonMinus.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMinus.Location = new System.Drawing.Point(93, 207);
+            this.buttonMinus.Location = new System.Drawing.Point(91, 179);
             this.buttonMinus.Name = "buttonMinus";
             this.buttonMinus.Size = new System.Drawing.Size(75, 23);
             this.buttonMinus.TabIndex = 1;
@@ -63,7 +67,7 @@
             // buttonDivision
             // 
             this.buttonDivision.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDivision.Location = new System.Drawing.Point(174, 207);
+            this.buttonDivision.Location = new System.Drawing.Point(169, 179);
             this.buttonDivision.Name = "buttonDivision";
             this.buttonDivision.Size = new System.Drawing.Size(75, 23);
             this.buttonDivision.TabIndex = 2;
@@ -74,7 +78,7 @@
             // buttonMultiplication
             // 
             this.buttonMultiplication.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonMultiplication.Location = new System.Drawing.Point(255, 207);
+            this.buttonMultiplication.Location = new System.Drawing.Point(250, 179);
             this.buttonMultiplication.Name = "buttonMultiplication";
             this.buttonMultiplication.Size = new System.Drawing.Size(75, 23);
             this.buttonMultiplication.TabIndex = 3;
@@ -111,11 +115,59 @@
             this.labelOutput.Size = new System.Drawing.Size(0, 13);
             this.labelOutput.TabIndex = 9;
             // 
+            // buttonSqrt
+            // 
+            this.buttonSqrt.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqrt.Location = new System.Drawing.Point(12, 208);
+            this.buttonSqrt.Name = "buttonSqrt";
+            this.buttonSqrt.Size = new System.Drawing.Size(73, 30);
+            this.buttonSqrt.TabIndex = 11;
+            this.buttonSqrt.Text = "Sqrt";
+            this.buttonSqrt.UseVisualStyleBackColor = true;
+            this.buttonSqrt.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonCos
+            // 
+            this.buttonCos.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCos.Location = new System.Drawing.Point(93, 207);
+            this.buttonCos.Name = "buttonCos";
+            this.buttonCos.Size = new System.Drawing.Size(73, 31);
+            this.buttonCos.TabIndex = 12;
+            this.buttonCos.Text = "Cos";
+            this.buttonCos.UseVisualStyleBackColor = true;
+            this.buttonCos.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonSin
+            // 
+            this.buttonSin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSin.Location = new System.Drawing.Point(169, 207);
+            this.buttonSin.Name = "buttonSin";
+            this.buttonSin.Size = new System.Drawing.Size(73, 31);
+            this.buttonSin.TabIndex = 13;
+            this.buttonSin.Text = "Sin";
+            this.buttonSin.UseVisualStyleBackColor = true;
+            this.buttonSin.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonLn
+            // 
+            this.buttonLn.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLn.Location = new System.Drawing.Point(250, 207);
+            this.buttonLn.Name = "buttonLn";
+            this.buttonLn.Size = new System.Drawing.Size(73, 31);
+            this.buttonLn.TabIndex = 14;
+            this.buttonLn.Text = "ln";
+            this.buttonLn.UseVisualStyleBackColor = true;
+            this.buttonLn.Click += new System.EventHandler(this.button_ClickOne);
+            // 
             // FormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(351, 242);
+            this.ClientSize = new System.Drawing.Size(349, 242);
+            this.Controls.Add(this.buttonLn);
+            this.Controls.Add(this.buttonSin);
+            this.Controls.Add(this.buttonCos);
+            this.Controls.Add(this.buttonSqrt);
             this.Controls.Add(this.labelOutput);
             this.Controls.Add(this.textBoxInput2);
             this.Controls.Add(this.textBoxInput1);
@@ -126,6 +178,7 @@
             this.Controls.Add(this.buttonPlus);
             this.Name = "FormCalculator";
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.button_ClickOne);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,6 +194,10 @@
         private System.Windows.Forms.TextBox textBoxInput1;
         private System.Windows.Forms.TextBox textBoxInput2;
         private System.Windows.Forms.Label labelOutput;
+        private System.Windows.Forms.Button buttonSqrt;
+        private System.Windows.Forms.Button buttonCos;
+        private System.Windows.Forms.Button buttonSin;
+        private System.Windows.Forms.Button buttonLn;
     }
 }
 

@@ -25,5 +25,14 @@ namespace CALCULATOR
             double Result= calculator.Calculate(First,Second);
             labelOutput.Text = Result.ToString();
         }
+
+        private void button_ClickOne(object sender, EventArgs e)
+        {
+            double First = Convert.ToDouble(textBoxInput1.Text);
+            IOneCalculator calculator = OneArgFactory.CreateCalculator(((Button)sender).Name);
+            double Result = calculator.Calculate(First);
+            labelOutput.Text = Result.ToString();
+
+        }
     }
 }
