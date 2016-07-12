@@ -2,11 +2,11 @@
 
 namespace CALCULATOR
 {
-    public class ClassLn : IOneCalculator
+    public class Log : IOneCalculator
     {
         public double Calculate(double First)
         {
-            return Math.Log(First,Math.E);
+            return Math.Log(First, 10);
         }
     }
 }

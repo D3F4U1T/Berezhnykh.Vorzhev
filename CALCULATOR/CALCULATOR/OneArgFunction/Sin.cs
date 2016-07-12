@@ -2,11 +2,11 @@
 
 namespace CALCULATOR
 {
-    public class ClassSqrt: IOneCalculator
+    public class Sin : IOneCalculator
     {
         public double Calculate(double First)
         {
-            return Math.Sqrt(First); 
+            return Math.Sin(First);
         }
     }
 }

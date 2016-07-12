@@ -1,10 +1,10 @@
 ﻿namespace CALCULATOR
 {
-    public class ClassDivision : ITwoCalculator
+    public class Multiplication : ITwoCalculator
     {
         public double Calculate(double First, double Second)
         {
-            return First / Second;
+            return First * Second;
         }
     }
 }

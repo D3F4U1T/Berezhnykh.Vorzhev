@@ -44,26 +44,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassCos.cs" />
-    <Compile Include="ClassDivision.cs" />
-    <Compile Include="ClassLn.cs" />
-    <Compile Include="ClassMinus.cs" />
-    <Compile Include="ClassMultiplication.cs" />
-    <Compile Include="ClassPlus.cs" />
-    <Compile Include="ClassSin.cs" />
-    <Compile Include="ClassSqrt.cs" />
+    <Compile Include="OneArgFunction\Abc.cs" />
+    <Compile Include="TwoArgFunction\Atan2.cs" />
+    <Compile Include="OneArgFunction\Exp.cs" />
+    <Compile Include="OneArgFunction\Inverse.cs" />
+    <Compile Include="OneArgFunction\Ctg.cs" />
+    <Compile Include="OneArgFunction\Cos.cs" />
+    <Compile Include="TwoArgFunction\Sqrtx.cs" />
+    <Compile Include="TwoArgFunction\Division.cs" />
+    <Compile Include="OneArgFunction\Ln.cs" />
+    <Compile Include="OneArgFunction\Log.cs" />
+    <Compile Include="TwoArgFunction\Logxy.cs" />
+    <Compile Include="TwoArgFunction\Minus.cs" />
+    <Compile Include="TwoArgFunction\Multiplication.cs" />
+    <Compile Include="TwoArgFunction\Plus.cs" />
+    <Compile Include="OneArgFunction\Sin.cs" />
+    <Compile Include="OneArgFunction\Sqr.cs" />
+    <Compile Include="OneArgFunction\SqrQube.cs" />
+    <Compile Include="OneArgFunction\Sqrt.cs" />
+    <Compile Include="OneArgFunction\Tan.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IOneCalculator.cs" />
-    <Compile Include="ITwoCalculator.cs" />
-    <Compile Include="OneArgFactory.cs" />
+    <Compile Include="OneArgFunction\IOneCalculator.cs" />
+    <Compile Include="TwoArgFunction\ITwoCalculator.cs" />
+    <Compile Include="OneArgFunction\OneArgFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwoArgFactory.cs" />
+    <Compile Include="TwoArgFunction\TwoArgFactory.cs" />
+    <Compile Include="TwoArgFunction\Sqrxy.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

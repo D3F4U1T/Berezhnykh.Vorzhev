@@ -40,6 +40,18 @@
             this.buttonCos = new System.Windows.Forms.Button();
             this.buttonSin = new System.Windows.Forms.Button();
             this.buttonLn = new System.Windows.Forms.Button();
+            this.buttonTan = new System.Windows.Forms.Button();
+            this.buttonSqrQube = new System.Windows.Forms.Button();
+            this.buttonSqr = new System.Windows.Forms.Button();
+            this.buttonLog = new System.Windows.Forms.Button();
+            this.buttonInverse = new System.Windows.Forms.Button();
+            this.buttonCtg = new System.Windows.Forms.Button();
+            this.buttonSqrxy = new System.Windows.Forms.Button();
+            this.buttonLogTwoArg = new System.Windows.Forms.Button();
+            this.buttonSqrtx = new System.Windows.Forms.Button();
+            this.buttonAtan2 = new System.Windows.Forms.Button();
+            this.buttonExp = new System.Windows.Forms.Button();
+            this.buttonAbc = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPlus
@@ -97,14 +109,14 @@
             // 
             this.textBoxInput1.Location = new System.Drawing.Point(12, 12);
             this.textBoxInput1.Name = "textBoxInput1";
-            this.textBoxInput1.Size = new System.Drawing.Size(327, 20);
+            this.textBoxInput1.Size = new System.Drawing.Size(313, 20);
             this.textBoxInput1.TabIndex = 6;
             // 
             // textBoxInput2
             // 
             this.textBoxInput2.Location = new System.Drawing.Point(12, 75);
             this.textBoxInput2.Name = "textBoxInput2";
-            this.textBoxInput2.Size = new System.Drawing.Size(327, 20);
+            this.textBoxInput2.Size = new System.Drawing.Size(313, 20);
             this.textBoxInput2.TabIndex = 8;
             // 
             // labelOutput
@@ -120,7 +132,7 @@
             this.buttonSqrt.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSqrt.Location = new System.Drawing.Point(12, 208);
             this.buttonSqrt.Name = "buttonSqrt";
-            this.buttonSqrt.Size = new System.Drawing.Size(73, 30);
+            this.buttonSqrt.Size = new System.Drawing.Size(75, 25);
             this.buttonSqrt.TabIndex = 11;
             this.buttonSqrt.Text = "Sqrt";
             this.buttonSqrt.UseVisualStyleBackColor = true;
@@ -131,7 +143,7 @@
             this.buttonCos.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonCos.Location = new System.Drawing.Point(93, 207);
             this.buttonCos.Name = "buttonCos";
-            this.buttonCos.Size = new System.Drawing.Size(73, 31);
+            this.buttonCos.Size = new System.Drawing.Size(75, 26);
             this.buttonCos.TabIndex = 12;
             this.buttonCos.Text = "Cos";
             this.buttonCos.UseVisualStyleBackColor = true;
@@ -142,7 +154,7 @@
             this.buttonSin.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonSin.Location = new System.Drawing.Point(169, 207);
             this.buttonSin.Name = "buttonSin";
-            this.buttonSin.Size = new System.Drawing.Size(73, 31);
+            this.buttonSin.Size = new System.Drawing.Size(75, 26);
             this.buttonSin.TabIndex = 13;
             this.buttonSin.Text = "Sin";
             this.buttonSin.UseVisualStyleBackColor = true;
@@ -153,17 +165,161 @@
             this.buttonLn.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonLn.Location = new System.Drawing.Point(250, 207);
             this.buttonLn.Name = "buttonLn";
-            this.buttonLn.Size = new System.Drawing.Size(73, 31);
+            this.buttonLn.Size = new System.Drawing.Size(75, 26);
             this.buttonLn.TabIndex = 14;
             this.buttonLn.Text = "ln";
             this.buttonLn.UseVisualStyleBackColor = true;
             this.buttonLn.Click += new System.EventHandler(this.button_ClickOne);
             // 
+            // buttonTan
+            // 
+            this.buttonTan.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonTan.Location = new System.Drawing.Point(250, 239);
+            this.buttonTan.Name = "buttonTan";
+            this.buttonTan.Size = new System.Drawing.Size(75, 26);
+            this.buttonTan.TabIndex = 18;
+            this.buttonTan.Text = "tan";
+            this.buttonTan.UseVisualStyleBackColor = true;
+            this.buttonTan.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonSqrQube
+            // 
+            this.buttonSqrQube.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqrQube.Location = new System.Drawing.Point(169, 239);
+            this.buttonSqrQube.Name = "buttonSqrQube";
+            this.buttonSqrQube.Size = new System.Drawing.Size(75, 26);
+            this.buttonSqrQube.TabIndex = 17;
+            this.buttonSqrQube.Text = "x^3";
+            this.buttonSqrQube.UseVisualStyleBackColor = true;
+            this.buttonSqrQube.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonSqr
+            // 
+            this.buttonSqr.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqr.Location = new System.Drawing.Point(93, 239);
+            this.buttonSqr.Name = "buttonSqr";
+            this.buttonSqr.Size = new System.Drawing.Size(75, 26);
+            this.buttonSqr.TabIndex = 16;
+            this.buttonSqr.Text = "x^2";
+            this.buttonSqr.UseVisualStyleBackColor = true;
+            this.buttonSqr.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonLog
+            // 
+            this.buttonLog.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLog.Location = new System.Drawing.Point(12, 240);
+            this.buttonLog.Name = "buttonLog";
+            this.buttonLog.Size = new System.Drawing.Size(75, 25);
+            this.buttonLog.TabIndex = 15;
+            this.buttonLog.Text = "Log";
+            this.buttonLog.UseVisualStyleBackColor = true;
+            this.buttonLog.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonInverse
+            // 
+            this.buttonInverse.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonInverse.Location = new System.Drawing.Point(169, 271);
+            this.buttonInverse.Name = "buttonInverse";
+            this.buttonInverse.Size = new System.Drawing.Size(75, 26);
+            this.buttonInverse.TabIndex = 22;
+            this.buttonInverse.Text = "+/-";
+            this.buttonInverse.UseVisualStyleBackColor = true;
+            this.buttonInverse.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonCtg
+            // 
+            this.buttonCtg.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonCtg.Location = new System.Drawing.Point(250, 271);
+            this.buttonCtg.Name = "buttonCtg";
+            this.buttonCtg.Size = new System.Drawing.Size(75, 26);
+            this.buttonCtg.TabIndex = 21;
+            this.buttonCtg.Text = "Ctg";
+            this.buttonCtg.UseVisualStyleBackColor = true;
+            this.buttonCtg.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonSqrxy
+            // 
+            this.buttonSqrxy.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqrxy.Location = new System.Drawing.Point(88, 303);
+            this.buttonSqrxy.Name = "buttonSqrxy";
+            this.buttonSqrxy.Size = new System.Drawing.Size(75, 26);
+            this.buttonSqrxy.TabIndex = 20;
+            this.buttonSqrxy.Text = "x^y";
+            this.buttonSqrxy.UseVisualStyleBackColor = true;
+            this.buttonSqrxy.Click += new System.EventHandler(this.button_Click);
+            // 
+            // buttonLogTwoArg
+            // 
+            this.buttonLogTwoArg.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogTwoArg.Location = new System.Drawing.Point(12, 304);
+            this.buttonLogTwoArg.Name = "buttonLogTwoArg";
+            this.buttonLogTwoArg.Size = new System.Drawing.Size(70, 25);
+            this.buttonLogTwoArg.TabIndex = 19;
+            this.buttonLogTwoArg.Text = "Logy(x)";
+            this.buttonLogTwoArg.UseVisualStyleBackColor = true;
+            this.buttonLogTwoArg.Click += new System.EventHandler(this.button_Click);
+            // 
+            // buttonSqrtx
+            // 
+            this.buttonSqrtx.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSqrtx.Location = new System.Drawing.Point(245, 304);
+            this.buttonSqrtx.Name = "buttonSqrtx";
+            this.buttonSqrtx.Size = new System.Drawing.Size(80, 26);
+            this.buttonSqrtx.TabIndex = 26;
+            this.buttonSqrtx.Text = "Sqrt(x)";
+            this.buttonSqrtx.UseVisualStyleBackColor = true;
+            this.buttonSqrtx.Click += new System.EventHandler(this.button_Click);
+            // 
+            // buttonAtan2
+            // 
+            this.buttonAtan2.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAtan2.Location = new System.Drawing.Point(169, 303);
+            this.buttonAtan2.Name = "buttonAtan2";
+            this.buttonAtan2.Size = new System.Drawing.Size(75, 26);
+            this.buttonAtan2.TabIndex = 25;
+            this.buttonAtan2.Text = "Atan2";
+            this.buttonAtan2.UseVisualStyleBackColor = true;
+            this.buttonAtan2.Click += new System.EventHandler(this.button_Click);
+            // 
+            // buttonExp
+            // 
+            this.buttonExp.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonExp.Location = new System.Drawing.Point(93, 271);
+            this.buttonExp.Name = "buttonExp";
+            this.buttonExp.Size = new System.Drawing.Size(75, 26);
+            this.buttonExp.TabIndex = 24;
+            this.buttonExp.Text = "Exp";
+            this.buttonExp.UseVisualStyleBackColor = true;
+            this.buttonExp.Click += new System.EventHandler(this.button_ClickOne);
+            // 
+            // buttonAbc
+            // 
+            this.buttonAbc.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAbc.Location = new System.Drawing.Point(12, 272);
+            this.buttonAbc.Name = "buttonAbc";
+            this.buttonAbc.Size = new System.Drawing.Size(75, 25);
+            this.buttonAbc.TabIndex = 23;
+            this.buttonAbc.Text = "Abc";
+            this.buttonAbc.UseVisualStyleBackColor = true;
+            this.buttonAbc.Click += new System.EventHandler(this.button_ClickOne);
+            // 
             // FormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 242);
+            this.ClientSize = new System.Drawing.Size(332, 342);
+            this.Controls.Add(this.buttonSqrtx);
+            this.Controls.Add(this.buttonAtan2);
+            this.Controls.Add(this.buttonExp);
+            this.Controls.Add(this.buttonAbc);
+            this.Controls.Add(this.buttonInverse);
+            this.Controls.Add(this.buttonCtg);
+            this.Controls.Add(this.buttonSqrxy);
+            this.Controls.Add(this.buttonLogTwoArg);
+            this.Controls.Add(this.buttonTan);
+            this.Controls.Add(this.buttonSqrQube);
+            this.Controls.Add(this.buttonSqr);
+            this.Controls.Add(this.buttonLog);
             this.Controls.Add(this.buttonLn);
             this.Controls.Add(this.buttonSin);
             this.Controls.Add(this.buttonCos);
@@ -198,6 +354,18 @@
         private System.Windows.Forms.Button buttonCos;
         private System.Windows.Forms.Button buttonSin;
         private System.Windows.Forms.Button buttonLn;
+        private System.Windows.Forms.Button buttonTan;
+        private System.Windows.Forms.Button buttonSqrQube;
+        private System.Windows.Forms.Button buttonSqr;
+        private System.Windows.Forms.Button buttonLog;
+        private System.Windows.Forms.Button buttonInverse;
+        private System.Windows.Forms.Button buttonCtg;
+        private System.Windows.Forms.Button buttonSqrxy;
+        private System.Windows.Forms.Button buttonLogTwoArg;
+        private System.Windows.Forms.Button buttonSqrtx;
+        private System.Windows.Forms.Button buttonAtan2;
+        private System.Windows.Forms.Button buttonExp;
+        private System.Windows.Forms.Button buttonAbc;
     }
 }
 
