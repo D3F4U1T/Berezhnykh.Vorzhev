@@ -52,6 +52,8 @@
             this.buttonAtan2 = new System.Windows.Forms.Button();
             this.buttonExp = new System.Windows.Forms.Button();
             this.buttonAbc = new System.Windows.Forms.Button();
+            this.Mass = new System.Windows.Forms.TextBox();
+            this.Click = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonPlus
@@ -303,11 +305,31 @@
             this.buttonAbc.UseVisualStyleBackColor = true;
             this.buttonAbc.Click += new System.EventHandler(this.button_ClickOne);
             // 
+            // Mass
+            // 
+            this.Mass.Location = new System.Drawing.Point(12, 340);
+            this.Mass.Name = "Mass";
+            this.Mass.Size = new System.Drawing.Size(313, 20);
+            this.Mass.TabIndex = 27;
+            this.Mass.TextChanged += new System.EventHandler(this.Mass_TextChanged);
+            // 
+            // Click
+            // 
+            this.Click.Font = new System.Drawing.Font("Franklin Gothic Medium", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Click.Location = new System.Drawing.Point(12, 366);
+            this.Click.Name = "Click";
+            this.Click.Size = new System.Drawing.Size(308, 23);
+            this.Click.TabIndex = 0;
+            this.Click.Text = "Click";
+            this.Click.UseVisualStyleBackColor = true;
+            this.Click.Click += new System.EventHandler(this.ClickMass);
+            // 
             // FormCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 342);
+            this.ClientSize = new System.Drawing.Size(332, 392);
+            this.Controls.Add(this.Mass);
             this.Controls.Add(this.buttonSqrtx);
             this.Controls.Add(this.buttonAtan2);
             this.Controls.Add(this.buttonExp);
@@ -331,9 +353,10 @@
             this.Controls.Add(this.buttonMultiplication);
             this.Controls.Add(this.buttonDivision);
             this.Controls.Add(this.buttonMinus);
+            this.Controls.Add(this.Click);
             this.Controls.Add(this.buttonPlus);
             this.Name = "FormCalculator";
-            this.Text = "Form1";
+            this.Text = "v";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,6 +388,8 @@
         private System.Windows.Forms.Button buttonAtan2;
         private System.Windows.Forms.Button buttonExp;
         private System.Windows.Forms.Button buttonAbc;
+        private System.Windows.Forms.TextBox Mass;
+        private System.Windows.Forms.Button Click;
     }
 }
 

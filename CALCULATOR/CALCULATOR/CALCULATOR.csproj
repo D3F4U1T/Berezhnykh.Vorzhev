@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ISort.cs" />
     <Compile Include="OneArgFunction\Abc.cs" />
+    <Compile Include="Sorter.cs" />
+    <Compile Include="SortFactory.cs" />
     <Compile Include="TwoArgFunction\Atan2.cs" />
     <Compile Include="OneArgFunction\Exp.cs" />
     <Compile Include="OneArgFunction\Inverse.cs" />
