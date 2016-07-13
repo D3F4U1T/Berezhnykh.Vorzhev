@@ -4,6 +4,11 @@ namespace CALCULATOR.OneArgFunction
 {
     public static class OneArgFactory
     {
+        /// <summary>
+        /// Factory One Arguments
+        /// </summary>
+        /// <param name="CalculatorName"></param>
+        /// <returns></returns>
         public static IOneCalculator CreateCalculator(string CalculatorName)
         {
             switch (CalculatorName)
