@@ -34,7 +34,7 @@ namespace CALCULATOR.OneArgFunction
                     return new Exp();
 
                 default:
-                    throw new Exception("I don't no this Operation");
+                    throw new Exception("I don't know this operation");
 
             }
         }

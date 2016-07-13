@@ -47,6 +47,7 @@
     <Compile Include="OneArgFunction\CosTests.cs" />
     <Compile Include="OneArgFunction\CtgTests.cs" />
     <Compile Include="OneArgFunction\ExpTests.cs" />
+    <Compile Include="OneArgFunction\FactoryTests.cs" />
     <Compile Include="OneArgFunction\InverseTests.cs" />
     <Compile Include="OneArgFunction\SqrQubeTests.cs" />
     <Compile Include="OneArgFunction\SqrTests.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="TwoArgFunction\PlusTests.cs" />
     <Compile Include="TwoArgFunction\SqrtxTests.cs" />
     <Compile Include="TwoArgFunction\SqrxyTests.cs" />
+    <Compile Include="TwoArgFunction\TwoArgFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CALCULATOR\CALCULATOR.csproj">

@@ -25,7 +25,7 @@ namespace CALCULATOR.TwoArgFunction
                 case "buttonSqrtx":
                     return new Sqrtx();
                 default:
-                    throw new Exception("I don't no this Operation");
+                    throw new Exception("I don't know this Operation");
 
             }
         }
